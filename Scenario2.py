@@ -38,6 +38,7 @@ gpu_result, gpu_execution_time = gpu_image_processing(image)
 
 # Display the results and execution times
 cv2.imshow("CPU Result", cpu_result)
+cv2.imshow("GPU Result", gpu_result.numpy())  # Display the GPU result
 cv2.waitKey(0)
 
 print("CPU Execution Time:", cpu_execution_time, "seconds")
